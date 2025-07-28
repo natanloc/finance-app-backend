@@ -1,0 +1,10 @@
+services:
+  api-finance-app:
+    image: bitnami/postgresql
+    container_name: finance-app
+    ports:
+      - 4321:5432
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=financeapp
