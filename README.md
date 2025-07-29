@@ -24,7 +24,7 @@ API REST para gerenciamento financeiro pessoal, desenvolvida em **Node.js com Fa
 ## 📦 Instalação e Configuração
 
 # 1. Clonar o repositório
-git clone https://github.com/natanloc/finance-app.git
+git clone https://github.com/natanloc/finance-app-backend.git
 
 # 2. Instalar dependências
 npm install
