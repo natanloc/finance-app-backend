@@ -14,26 +14,6 @@ API REST para gerenciamento financeiro pessoal, desenvolvida em **Node.js com Fa
 
 ---
 
-## 📂 Estrutura do Projeto
-
-backend/
-┣ prisma/
-┃ ┣ migrations/ # Histórico de migrations
-┃ ┗ schema.prisma # Definição dos models
-┣ src/
-┃ ┣ controllers/ # Lógica de criação e listagem de transações
-┃ ┣ lib/ # Inicialização do Prisma
-┃ ┣ routes/ # Definição das rotas
-┃ ┣ app.ts # Instância principal do Fastify
-┃ ┗ server.ts # Ponto de entrada da aplicação
-┣ .env # Variáveis de ambiente
-┣ docker-compose.yml # Configuração do PostgreSQL
-┣ package.json
-┗ tsconfig.json
-
-
----
-
 ## ⚙️ Pré-requisitos
 
 - Node.js >= 18
