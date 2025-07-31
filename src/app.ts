@@ -4,7 +4,8 @@ import cors from "@fastify/cors"
 
 export const app = fastify()
 
-app.register(transactionRoutes)
 app.register(cors, {
-	origin: "http://localhost:5173",
+	origin: true,
+	methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
 })
+app.register(transactionRoutes)
