@@ -30,7 +30,7 @@ model Transaction {
   status    TransactionStatus
   frequency TransactionFrequency
   date      DateTime
-  validity  DateTime
+  validity  DateTime?
   createdAt DateTime             @default(now())
 
   @@map("transactions")

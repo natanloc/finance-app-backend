@@ -8,12 +8,12 @@ export async function createTransaction(
 ) {
 	const transactionSchema = z.object({
 		name: z.string(),
-		price: z.number().nonnegative(),
+		price: z.coerce.number().nonnegative(),
 		type: z.enum(["Income", "Outcome"]),
 		status: z.enum(["Paid", "Pending"]),
 		frequency: z.enum(["Fixed", "Variable"]),
 		date: z.coerce.date(),
-		validity: z.coerce.date(),
+		validity: z.date().nullable(),
 	})
 
 	const { name, price, type, status, frequency, date, validity } =
