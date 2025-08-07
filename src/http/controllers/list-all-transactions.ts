@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/suspicious/noExplicitAny: . */
 import type { FastifyReply, FastifyRequest } from "fastify"
 import z from "zod"
 import { prisma } from "../../lib/prisma"
